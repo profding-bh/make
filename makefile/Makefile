@@ -13,7 +13,7 @@ command.o:command.c def.h command.h
 files.o:files.c def.h command.h buffer.h
 	cc -c files.c
 tools.o:tools.c def.h 
-	cc -c tools.c
+	cc -c tools.c # -c 通常用于编译不包含主程序的子程序文件。
 
 clean:
 	rm textedit main.o input.o output.o 
